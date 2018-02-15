@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Bike_Home" />
+        <activity android:name=".Bike_1"></activity>
     </application>
 
 </manifest>
