@@ -23,25 +23,25 @@ public class MainActivity extends AppCompatActivity {
         t1=findViewById(R.id.txt1);
         image = (ImageView) findViewById(R.id.iv);
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.zoom);
-        Animation myAnimation = AnimationUtils.loadAnimation(this,R.anim.rota);
-        Animation myAnimation1 = AnimationUtils.loadAnimation(this,R.anim.rota);
+        Animation myAnimation = AnimationUtils.loadAnimation(this,R.anim.zoom);
+        Animation myAnimation1 = AnimationUtils.loadAnimation(this,R.anim.zoom);
         t.startAnimation(myAnimation);
         t1.startAnimation(myAnimation1);
         image.startAnimation(myanim);
 
         //Toast.makeText(this, "Successfully done", Toast.LENGTH_SHORT).show();
 
-        final Intent i=new Intent(this,Bike_Home.class);
+        final Intent intent=new Intent(MainActivity.this,Bike_Home.class);
         Thread timer = new Thread(){
             public void run () {
                 try {
-                    sleep(5000);
+                    sleep(4000);
                 }
                 catch (InterruptedException e){
                     e.printStackTrace();
                 }
                 finally {
-                    startActivity(i);
+                    startActivity(intent);
                     finish();
                 }
 
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         };
+
         timer.start();
 
     }

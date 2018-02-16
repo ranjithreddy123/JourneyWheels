@@ -1,14 +1,18 @@
 package com.example.admin.journeywheels;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class Bike_Home extends AppCompatActivity {
 
-    Button b1,b2,b3,b4;
+    LinearLayout b1,b2,b3,b4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +28,8 @@ public class Bike_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i=new Intent(Bike_Home.this,Bike_1.class);
-                startActivity(i);
+                Intent intent=new Intent(Bike_Home.this,Aprilia.class);
+                startActivity(intent);
 
             }
         });
@@ -34,8 +38,8 @@ public class Bike_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i=new Intent(Bike_Home.this,Bike_1.class);
-                startActivity(i);
+                Intent intent=new Intent(Bike_Home.this,Aprilia.class);
+                startActivity(intent);
 
             }
         });
@@ -45,8 +49,8 @@ public class Bike_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i=new Intent(Bike_Home.this,Bike_1.class);
-                startActivity(i);
+                Intent intent=new Intent(Bike_Home.this,Aprilia.class);
+                startActivity(intent);
 
             }
         });
@@ -56,8 +60,8 @@ public class Bike_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i=new Intent(Bike_Home.this,Bike_1.class);
-                startActivity(i);
+                Intent intent=new Intent(Bike_Home.this,Aprilia.class);
+                startActivity(intent);
 
             }
         });
