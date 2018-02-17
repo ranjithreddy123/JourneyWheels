@@ -12,8 +12,8 @@ import android.widget.Toast;
 public class Aprilia2 extends AppCompatActivity {
 
     Button b7;
-    EditText e,e1,e2,e3;
-    ImageView i,i1,i2;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,9 @@ public class Aprilia2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent2=new Intent(Aprilia2.this,Bike_Home.class);
+                Intent intent3=new Intent(Aprilia2.this,Bike_Home.class);
                 Toast.makeText(Aprilia2.this, "Successfully Booked", Toast.LENGTH_SHORT).show();
-                startActivity(intent2);
+                startActivity(intent3);
             }
         });
 
