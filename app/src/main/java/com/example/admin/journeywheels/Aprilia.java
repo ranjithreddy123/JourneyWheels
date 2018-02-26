@@ -29,8 +29,8 @@ public class Aprilia extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent1=new Intent(Aprilia.this,Aprilia1.class);
-                startActivity(intent1);
+                Intent intent=new Intent(Aprilia.this,Aprilia1.class);
+                startActivity(intent);
 
             }
         });

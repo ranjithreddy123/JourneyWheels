@@ -26,7 +26,7 @@ public class Honda_Activa extends AppCompatActivity {
 
         viewPager1 = (ViewPager) findViewById(R.id.viewPager);
 
-        ViewPagerAdapter viewPagerAdapter1 = new ViewPagerAdapter(Honda_Activa.this);
+        ViewPagerAdapter1 viewPagerAdapter1 = new ViewPagerAdapter1(Honda_Activa.this);
 
         viewPager1.setAdapter(viewPagerAdapter1);
 
@@ -42,50 +42,5 @@ public class Honda_Activa extends AppCompatActivity {
 
     }
 
-
-    public class ViewPagerAdapter extends PagerAdapter {
-
-        private Context context;
-        private LayoutInflater layoutInflater;
-        private Integer[] images = {R.drawable.bike1, R.drawable.pic, R.drawable.pic2, R.drawable.pic3};
-
-        public ViewPagerAdapter(Context context) {
-            this.context = context;
-        }
-
-        @Override
-        public int getCount() {
-            return images.length;
-        }
-
-        @Override
-        public boolean isViewFromObject(View view, Object object) {
-            return view == object;
-        }
-
-        @Override
-        public Object instantiateItem(ViewGroup container, final int position) {
-
-            layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View view = layoutInflater.inflate(R.layout.custom_layout, null);
-            ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
-            imageView.setImageResource(images[position]);
-
-            ViewPager vp = (ViewPager) container;
-            vp.addView(view, 0);
-            return view;
-
-        }
-
-        @Override
-        public void destroyItem(ViewGroup container, int position, Object object) {
-
-            ViewPager vp = (ViewPager) container;
-            View view = (View) object;
-            vp.removeView(view);
-
-        }
-
-    }
 
 }

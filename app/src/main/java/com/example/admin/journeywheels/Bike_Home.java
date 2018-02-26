@@ -38,7 +38,7 @@ public class Bike_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(Bike_Home.this,Aprilia.class);
+                Intent intent=new Intent(Bike_Home.this,Honda_Activa.class);
                 startActivity(intent);
 
             }

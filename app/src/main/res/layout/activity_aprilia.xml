@@ -72,7 +72,7 @@
                    android:layout_gravity="center"
                    android:layout_marginTop="10dp"
                    android:textColor="#fff"
-                   android:text="    KILO-METERS LIMITS: 189 KILO-METERS PER DAY   "
+                   android:text="KILO-METERS LIMITS: 189 KILO-METERS PER DAY"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content" />
 
@@ -80,7 +80,7 @@
                    android:layout_gravity="center"
                    android:layout_marginTop="10dp"
                    android:textColor="#fff"
-                   android:text="    EXTRA KILO-METER CHARGE: Rs.2 PER KILO-METER   "
+                   android:text="  EXTRA KILO-METER CHARGE: Rs.2 PER KILO-METER "
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content" />
 
@@ -104,7 +104,7 @@
                android:textStyle="bold"
                android:text=" BOOK MY RIDE >> "
                android:layout_width="wrap_content"
-               android:layout_height="35dp" />
+               android:layout_height="40dp" />
 
        </LinearLayout>
    </ScrollView>
