@@ -19,7 +19,10 @@
         <activity android:name=".Bike_Home" />
         <activity android:name=".Aprilia" />
         <activity android:name=".Aprilia1" />
-        <activity android:name=".Aprilia2"></activity>
+        <activity android:name=".Aprilia2" />
+        <activity android:name=".Honda_Activa" />
+        <activity android:name=".Honda_Activa1" />
+        <activity android:name=".Honda_Activa2"></activity>
     </application>
 
 </manifest>

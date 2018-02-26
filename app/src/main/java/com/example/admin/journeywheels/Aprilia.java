@@ -21,7 +21,7 @@ public class Aprilia extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(Aprilia.this);
 
         viewPager.setAdapter(viewPagerAdapter);
 
