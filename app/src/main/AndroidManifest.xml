@@ -22,7 +22,13 @@
         <activity android:name=".Aprilia2" />
         <activity android:name=".Honda_Activa" />
         <activity android:name=".Honda_Activa1" />
-        <activity android:name=".Honda_Activa2"></activity>
+        <activity android:name=".Honda_Activa2" />
+        <activity android:name=".Yamaha" />
+        <activity android:name=".Yamaha1" />
+        <activity android:name=".Yamaha2" />
+        <activity android:name=".FZ" />
+        <activity android:name=".FZ1" />
+        <activity android:name=".FZ2"></activity>
     </application>
 
 </manifest>

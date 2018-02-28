@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18243d"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    tools:context="com.example.admin.journeywheels.FZ">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/viewPager"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"/>
+            <!--  <android.support.v7.widget.CardView
+                  android:layout_gravity="center"
+                  android:layout_marginTop="20dp"
+                  app:cardCornerRadius="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <LinearLayout
+                      android:orientation="vertical"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+                          <ImageView
+                              android:src="@drawable/bike1"
+                              android:layout_width="350dp"
+                              android:layout_height="300dp" />
+                  </LinearLayout>
+              </android.support.v7.widget.CardView>-->
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="YAMAHA FZ-S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Rs. 550/-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/outline"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:text=" KILO-METERS LIMITS: 189 KILO-METERS PER DAY "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:text="    EXTRA KILO-METER CHARGE: Rs.2 PER KILO-METER   "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#fff"
+                    android:text="    TOLLS,PARKING: TO BE PAID BY YOU   "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt20"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#ffaa00"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text=" BOOK MY RIDE >> "
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

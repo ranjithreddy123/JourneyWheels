@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 public class Bike_Home extends AppCompatActivity {
 
     LinearLayout b1,b2,b3,b4;
+    //hi
 
 
     @Override
@@ -49,7 +50,7 @@ public class Bike_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(Bike_Home.this,Aprilia.class);
+                Intent intent=new Intent(Bike_Home.this,Yamaha.class);
                 startActivity(intent);
 
             }
@@ -60,7 +61,7 @@ public class Bike_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(Bike_Home.this,Aprilia.class);
+                Intent intent=new Intent(Bike_Home.this,FZ.class);
                 startActivity(intent);
 
             }
