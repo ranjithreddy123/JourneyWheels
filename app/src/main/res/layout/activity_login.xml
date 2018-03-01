@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backp"
+    tools:context="com.example.admin.journeywheels.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/profile"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+    <TextView
+        android:text="LOGIN"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:hint="USER NAME"
+        android:gravity="center"
+        android:background="@drawable/login"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:hint="PASSWORD"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/bt21"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gobutton"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Go...!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+
+            <TextView
+                android:text="Forget Password...?"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:background="@drawable/gmailback"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+   <ImageView
+       android:layout_marginLeft="12dp"
+       android:layout_marginTop="2dp"
+       android:layout_marginBottom="2dp"
+       android:src="@drawable/gmaillogo"
+       android:layout_width="40dp"
+       android:layout_height="30dp" />
+        <TextView
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:text="     Login With Gmail     "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:background="@drawable/fbback"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/fblogo"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:text="Login With FaceBook  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:text="Create an Account...?"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:text="   ABOUT / CONTACT"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

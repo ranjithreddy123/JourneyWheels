@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Toast.makeText(this, "Successfully done", Toast.LENGTH_SHORT).show();
 
-        final Intent intent=new Intent(MainActivity.this,Bike_Home.class);
+        final Intent intent=new Intent(MainActivity.this,Login.class);
         Thread timer = new Thread(){
             public void run () {
                 try {

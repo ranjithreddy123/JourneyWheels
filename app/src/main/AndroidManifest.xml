@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.admin.journeywheels">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo1"
@@ -16,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login" />
         <activity android:name=".Bike_Home" />
         <activity android:name=".Aprilia" />
         <activity android:name=".Aprilia1" />
@@ -28,7 +31,8 @@
         <activity android:name=".Yamaha2" />
         <activity android:name=".FZ" />
         <activity android:name=".FZ1" />
-        <activity android:name=".FZ2"></activity>
+        <activity android:name=".FZ2" />
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>
