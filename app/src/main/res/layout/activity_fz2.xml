@@ -1,9 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#18243d"
+    android:orientation="vertical"
     tools:context="com.example.admin.journeywheels.FZ2">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="    Share : "
+                    android:textColor="#000"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/fb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/twitterr"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/gmail"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/calendar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:text="Book Now"
+                        android:textSize="30dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Booking ID   :- "
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et"
+                        android:hint="ID"
+                        android:gravity="center"
+                        android:background="@drawable/edittext"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Location       :- "
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et1"
+                        android:hint="Location"
+                        android:gravity="center"
+                        android:background="@drawable/edittext"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Pick Up         :- "
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et2"
+                        android:hint="From Date"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:background="@drawable/edittext"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="DropOff        :- "
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et3"
+                        android:hint="To Date"
+                        android:gravity="center"
+                        android:background="@drawable/edittext"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:inputType="number"
+                        android:textColor="#ffffff"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="PromoCode :- "
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et4"
+                        android:hint="Enter PromoCode if any"
+                        android:gravity="center"
+                        android:background="@drawable/edittext"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt9"
+                android:text="  LOGIN FROM BOOK  "
+                android:textStyle="bold"
+                android:background="#ffaa00"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -8,26 +8,42 @@
     android:background="@drawable/backp"
     tools:context="com.example.admin.journeywheels.Register">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:gravity="center"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     <EditText
-        android:layout_marginTop="10dp"
-        android:hint="Login ID"
-        android:textSize="25dp"
-        android:background="@drawable/login"
+        android:layout_marginTop="20dp"
+        android:hint="First Name"
+        android:textSize="18dp"
         android:gravity="center"
         android:layout_width="250dp"
         android:layout_height="40dp" />
 
         <EditText
             android:layout_marginTop="10dp"
-            android:hint="Login ID"
-            android:textSize="25dp"
-            android:background="@drawable/login"
+            android:hint="Last Name"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:textSize="18dp"
             android:gravity="center"
             android:layout_width="250dp"
             android:layout_height="40dp" />
@@ -35,48 +51,66 @@
         <EditText
             android:layout_marginTop="10dp"
             android:hint="Login ID"
-            android:textSize="25dp"
-            android:background="@drawable/login"
+            android:textSize="18dp"
             android:gravity="center"
             android:layout_width="250dp"
             android:layout_height="40dp" />
 
         <EditText
             android:layout_marginTop="10dp"
-            android:hint="Login ID"
-            android:textSize="25dp"
-            android:background="@drawable/login"
+            android:hint="Password"
+            android:textSize="18dp"
             android:gravity="center"
             android:layout_width="250dp"
             android:layout_height="40dp" />
 
         <EditText
             android:layout_marginTop="10dp"
-            android:hint="Login ID"
-            android:textSize="25dp"
-            android:background="@drawable/login"
+            android:hint="Re-Password"
+            android:textSize="18dp"
             android:gravity="center"
             android:layout_width="250dp"
             android:layout_height="40dp" />
 
         <EditText
             android:layout_marginTop="10dp"
-            android:hint="Login ID"
-            android:textSize="25dp"
-            android:background="@drawable/login"
+            android:hint="Street"
+            android:textSize="18dp"
             android:gravity="center"
             android:layout_width="250dp"
             android:layout_height="40dp" />
 
-        <EditText
+        <Spinner
             android:layout_marginTop="10dp"
-            android:hint="Login ID"
+            android:hint="City"
             android:textSize="25dp"
-            android:background="@drawable/login"
+            android:entries="@array/Districts_arrays"
+            android:prompt="@string/country_prompt1"
             android:gravity="center"
             android:layout_width="250dp"
             android:layout_height="40dp" />
 
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_marginTop="10dp"
+            android:hint="City"
+            android:textSize="25dp"
+            android:entries="@array/state_arrays"
+            android:prompt="@string/country_prompt"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/bt22"
+            android:text="  Register  "
+            android:background="@drawable/register"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
 
         </LinearLayout>
+    </ScrollView>
 </LinearLayout>
