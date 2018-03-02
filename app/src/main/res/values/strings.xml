@@ -36,7 +36,7 @@
 
     <string name="country_prompt1">Choose a State</string>
     <string-array name="Districts_arrays">
-    <item>Choose a Districts</item>
+        <item>Choose a Districts</item>
         <item>Anantapur</item>
         <item>Chittoor</item>
         <item>East Godavari</item>
@@ -52,5 +52,11 @@
         <item>West Godavari</item>
 
     </string-array>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>

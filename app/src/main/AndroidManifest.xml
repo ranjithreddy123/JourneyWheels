@@ -32,7 +32,11 @@
         <activity android:name=".FZ" />
         <activity android:name=".FZ1" />
         <activity android:name=".FZ2" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Register" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
