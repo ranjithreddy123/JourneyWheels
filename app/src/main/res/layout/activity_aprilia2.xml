@@ -104,6 +104,7 @@
 
                    <EditText
                        android:id="@+id/et"
+                       android:textColorHint="#fff"
                        android:hint="ID"
                        android:gravity="center"
                        android:background="@drawable/edittext"
@@ -132,6 +133,7 @@
 
                     <EditText
                         android:id="@+id/et1"
+                        android:textColorHint="#fff"
                         android:hint="Location"
                         android:gravity="center"
                         android:background="@drawable/edittext"
@@ -161,6 +163,7 @@
                     <EditText
                         android:id="@+id/et2"
                         android:hint="From Date"
+                        android:textColorHint="#fff"
                         android:gravity="center"
                         android:inputType="number"
                         android:background="@drawable/edittext"
@@ -190,6 +193,7 @@
                     <EditText
                         android:id="@+id/et3"
                         android:hint="To Date"
+                        android:textColorHint="#fff"
                         android:gravity="center"
                         android:background="@drawable/edittext"
                         android:textStyle="bold"
@@ -219,6 +223,7 @@
 
                     <EditText
                         android:id="@+id/et4"
+                        android:textColorHint="#fff"
                         android:hint="Enter PromoCode if any"
                         android:gravity="center"
                         android:background="@drawable/edittext"

@@ -12,8 +12,7 @@ import android.widget.Toast;
 public class Aprilia2 extends AppCompatActivity {
 
     Button b7;
-
-
+    ImageView i,i1,i2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +21,62 @@ public class Aprilia2 extends AppCompatActivity {
 
         b7=findViewById(R.id.bt7);
 
+        i=findViewById(R.id.iv);
+        i1=findViewById(R.id.iv1);
+        i2=findViewById(R.id.iv2);
+
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent3=new Intent(Aprilia2.this,Bike_Home.class);
+                Intent intent3=new Intent(Aprilia2.this,Home.class);
                 Toast.makeText(Aprilia2.this, "Successfully Booked", Toast.LENGTH_SHORT).show();
                 startActivity(intent3);
             }
         });
+
+        i.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "http://www.journeywheels.com/car-listing.php");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+
+            }
+        });
+
+        i1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "http://www.journeywheels.com/car-listing.php");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+
+            }
+        });
+
+        i2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "http://www.journeywheels.com/car-listing.php");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+
+            }
+        });
+
 
     }
 }
