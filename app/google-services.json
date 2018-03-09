@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "232028268766",
+    "firebase_url": "https://journeywheels-4f18a.firebaseio.com",
+    "project_id": "journeywheels-4f18a",
+    "storage_bucket": "journeywheels-4f18a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232028268766:android:7c4d5f6784bd90c1",
+        "android_client_info": {
+          "package_name": "com.example.admin.journeywheels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232028268766-klfdokjfpcmtejlq06vb8c0i4ega0g6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.journeywheels",
+            "certificate_hash": "738c5b39595810527928b44b4ab630bff18a0b2a"
+          }
+        },
+        {
+          "client_id": "232028268766-mk2u3f4te07cc1g12ulj59i7shqmqk13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8FSrPOW5p2ZHRVEszHnB5OHKXcvn-Bv0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232028268766-mk2u3f4te07cc1g12ulj59i7shqmqk13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

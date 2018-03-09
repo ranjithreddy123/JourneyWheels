@@ -37,27 +37,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <EditText
-        android:layout_marginTop="10dp"
-        android:hint="USER NAME"
-        android:gravity="center"
-        android:background="@drawable/login"
-        android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                android:background="@drawable/login"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:textColor="#000"
+                android:textColorHint="#000000" />
 
-    <EditText
-        android:hint="PASSWORD"
-        android:gravity="center"
-        android:inputType="textPassword"
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center"
-        android:background="@drawable/login"
-        android:layout_width="250dp"
-        android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="@drawable/login"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:textColor="#000"
+                android:textColorHint="#000" />
 
     <Button
-        android:id="@+id/bt21"
+        android:id="@+id/btn_login"
         android:layout_marginTop="10dp"
         android:background="@drawable/gobutton"
         android:layout_gravity="center"
@@ -68,12 +77,14 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp" />
 
-            <TextView
+            <Button
+                android:id="@+id/btn_reset_password"
                 android:text="Forget Password...?"
+                android:background="@drawable/reg"
                 android:textColor="#000"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -82,7 +93,7 @@
         android:layout_gravity="center"
         android:background="@drawable/gmailback"
         android:orientation="horizontal"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -132,10 +143,11 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv3"
-        android:text="Create an Account...?"
+    <Button
+        android:id="@+id/btn_signup"
+        android:text="Don&apos;t have an account? Sing up"
         android:textStyle="bold"
+        android:background="@drawable/reg"
         android:textColor="#000"
         android:textSize="20dp"
         android:layout_gravity="center"
@@ -151,6 +163,14 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>

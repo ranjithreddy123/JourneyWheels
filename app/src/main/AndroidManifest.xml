@@ -6,8 +6,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo1"
-        android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:label="JourneyWheels"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -32,11 +32,18 @@
         <activity android:name=".FZ" />
         <activity android:name=".FZ1" />
         <activity android:name=".FZ2" />
-        <activity android:name=".Register" />
-        <activity
-            android:name=".Home"
+
+        <activity android:name=".Register" android:label="Sign up" android:parentActivityName=".Login">
+            - <!--  Parent activity meta-data to support 4.0 and lower
+  -->
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Login" />
+        </activity>
+        <activity android:name=".Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+
     </application>
 
 </manifest>

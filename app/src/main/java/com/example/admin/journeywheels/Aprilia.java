@@ -25,15 +25,14 @@ public class Aprilia extends AppCompatActivity {
 
         viewPager.setAdapter(viewPagerAdapter);
 
-        b5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+      b5.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
 
-                Intent intent=new Intent(Aprilia.this,Aprilia1.class);
-                startActivity(intent);
+              Intent i=new Intent(Aprilia.this,Aprilia1.class);
+              startActivity(i);
 
-            }
-        });
-
+          }
+      });
     }
 }

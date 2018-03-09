@@ -3,6 +3,7 @@ package com.example.admin.journeywheels;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
@@ -16,10 +17,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private TextView email;
+    private Button signOut;
+    private FirebaseAuth.AuthStateListener authListener;
+    private FirebaseAuth auth;
 
     CardView c,c1,c2;
 
@@ -34,6 +45,61 @@ public class Home extends AppCompatActivity
         c1=findViewById(R.id.cd1);
         c2=findViewById(R.id.cd2);
 
+
+        Toolbar toolbar1 = (Toolbar) findViewById(R.id.toolbar);
+       /* toolbar.setTitle(getString(R.string.app_name));*/
+        setSupportActionBar(toolbar1);
+
+        //get firebase auth instance
+        auth = FirebaseAuth.getInstance();
+
+        //get current user
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // user auth state is changed - user is null
+                    // launch login activity
+                    startActivity(new Intent(Home.this, Login.class));
+                    finish();
+                }
+            }
+        };
+
+        signOut = (Button) findViewById(R.id.logout1);
+        email = (TextView) findViewById(R.id.email);
+
+        email.setText(user.getEmail());
+
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
+
+    }
+
+    //sign out method
+    public void signOut() {
+        auth.signOut();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        auth.addAuthStateListener(authListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (authListener != null) {
+            auth.removeAuthStateListener(authListener);
+        }
 
         c.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +145,7 @@ public class Home extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer,R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
